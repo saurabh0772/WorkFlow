@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Platypi";
+}
+
+
+header{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 3vw;
+    h1{
+        font-size: 60px;
+    }
+    .circle{
+        border: 1px solid violet;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-image: url(./assets/avatar.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+main{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    .leftContainer{
+        /* border: 1px solid green; */
+        width: 40vw;
+        height: auto;
+        margin-top: 15vh;
+        margin-left: 3vw;
+        .textt{
+            margin-top: 2vh;
+            margin-left: 2vw;
+            font-size: 2vw;
+        }
+        .description{
+            font-size: 20px;
+            margin-left: 2vw;
+            margin-top: 3vh;
+            h3{
+                margin-top: 3vh;
+            }
+        }
+        
+        .getStarted{
+            border: 1px solid #a4161a;
+            background: transparent;
+            
+            border-radius: 1.7vw;
+            width: auto;
+            height: auto;
+            margin-left: 2vw;
+            margin-top: 5vh;
+            padding: 1vh 1vw;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+            
+        }
+        .getStarted:hover{
+            background-color: #a4161a;
+            color: white;
+            transform: scale(1.01);
+        }
+    }
+    .rightContainer{
+        /* border: 1px solid blue; */
+        width: 40vw;
+        height: 60vh;
+        margin-top: 15vh;
+        margin-left: 14vw;
+        background-image: url(./assets/teamwork.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+footer{
+    /* border: 1px solid red; */
+    height: 6vh;
+    margin-top: 9vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h4{
+        color: white; 
+        font-family: sans-serif;  
+        font-weight: lighter;
+    }
+}

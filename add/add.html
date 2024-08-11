@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../assets/android-chrome-192x192.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+
+    <header>
+        <h1>WorkFlow</h1>
+        <div class="circle"></div>
+    </header>
+    
+    <main>
+        <div class="head">
+            <h2><a href="../index.html">Home</a> / <a href="../add/add.html">DashBoard</a> </h2>
+        </div>
+
+        <div class="mbody">
+            <div class="left">
+                
+                <h3><a href="../index.html">· Home</a></h3>
+                <h3><a href="../database/database.html">· Your Work</a></h3>
+                <h3><a href="#createNew">· Create New</a></h3>
+                <h3><a href="../Statistics/stats.html">· Statistics</a></h3>
+                
+                <h3><a href="../completed/complete.html">· Completed Work</a></h3>
+            </div>
+
+            <div class="right">
+                <div class="rhead">
+                    <h2>Add Your Work Below :</h2>
+                </div>
+                <div class="adding">
+                    <div class="fulladd">
+
+                        <a href="../database/database.html"><button class="create create1">
+                            <i class="fa-solid fa-user fa-4x" style="color: #006466;"></i>
+                        </button></a>
+
+                        <h3>Your Work</h3>
+                    </div>
+                    <div class="fulladd">
+
+                        <a href="../completed/complete.html"><button class="create create1">
+                            <!-- <i class="fa-solid fa-user fa-6x" style="color: rgb(160, 245, 160);"></i> -->
+                            <i class="fa-solid fa-check-to-slot fa-4x" style="color: #006466;"></i>
+                        </button></a>
+
+                        <h3>Completed Work</h3>
+                    </div>
+                    <div class="fulladd">
+                        <a href="#createNew">
+                            <button class="create">
+                                <i class="fa-solid fa-plus fa-4x" style="color: #ffffff;"></i>
+                            </button>   
+                        </a>
+                        <h3>Create New</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <div id="createNew" class="createnew">
+        <div class="createhead">
+            <h2>Create New Work :</h2>
+        </div>
+
+        <div class="inputdetails">
+            <div class="priority pprr">
+                <h3>Priority:</h3>
+                
+                 <div class="radd">
+                    <div class="first">
+                        <div>
+                            <input type="radio" name="rad" class="pinput linp">
+                        </div>
+                        <h5>LOW</h5>
+                    
+                    </div>
+                    <div class="second">
+                        <div>
+                            <input type="radio" name="rad" class="pinput hinp">
+                        </div>
+                        <h5>HIGH</h5>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="priority">
+                <h3>Work:</h3>
+                <input class="winput" type="text" placeholder="Enter Work e.g. title" >
+            </div>
+            <div class="priority">
+                <h3>Description:</h3>
+                <!-- <input class="dinput" type="inputarea" placeholder="Enter Description e.g. brief intro of work" > -->
+                 <textarea name="text" class="dinput" placeholder="Enter Description e.g. brief intro of work"></textarea>
+            </div>
+            <div class="priority">
+                <h3>Due Date:</h3>
+                <input class="ddinput" type="date" placeholder="Enter Due Date e.g. date/month/year" >
+            </div>
+            
+
+            <div class="submit">
+                <button class="btnsubmit">ADD</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <h4>created by &#x2665 @Saurabh</h4>
+    </footer>
+
+    <script src="./add.js"></script>
+</body>
+</html>
